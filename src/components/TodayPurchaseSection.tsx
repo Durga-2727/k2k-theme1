@@ -110,7 +110,7 @@ export default function TodayPurchaseSection({
             <PackageCheck className="h-4.5 w-4.5 text-emerald-600" />
             <span>Community Social Proof</span>
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-[#1F2937] tracking-tight">
             Today's Purchases
           </h2>
           <div className="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full" />
@@ -141,7 +141,7 @@ export default function TodayPurchaseSection({
                 <div
                   key={`${p.id}-purchase-${idx}`}
                   id={`purchase-card-${p.id}-${idx}`}
-                  className="w-[200px] sm:w-[240px] lg:w-[250px] shrink-0 group bg-slate-50/50 rounded-2xl border border-slate-100/85 hover:bg-white hover:border-slate-200/50 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden relative cursor-pointer"
+                  className="w-[200px] sm:w-[240px] lg:w-[250px] shrink-0 group bg-[#F5E6CA]/50 rounded-2xl border border-slate-100/85 hover:bg-white hover:border-slate-200/50 hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden relative cursor-pointer"
                   onClick={() => onSelectProduct(p)}
                 >
                   {/* Image Block */}
@@ -158,7 +158,7 @@ export default function TodayPurchaseSection({
 
                     {/* Left Badges */}
                     <div className="absolute top-2.5 left-2.5 z-25 flex flex-col gap-1.5">
-                      <span className="bg-[#0077B6] text-white text-[8px] sm:text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg flex items-center gap-0.5 shadow-sm font-sans">
+                      <span className="bg-[#0F766E] text-white text-[8px] sm:text-[9px] font-bold tracking-wider uppercase px-2 py-0.5 sm:px-2.5 sm:py-1 rounded-lg flex items-center gap-0.5 shadow-sm font-sans">
                         <Zap className="w-2.5 h-2.5 text-yellow-300 fill-yellow-300" />
                         <span>Recently Bought</span>
                       </span>
@@ -185,7 +185,7 @@ export default function TodayPurchaseSection({
                       </div>
 
                       {/* Name of Product */}
-                      <p className="font-serif text-sm sm:text-base font-bold text-slate-800 tracking-tight group-hover:text-emerald-600 transition-colors truncate">
+                      <p className="font-serif text-sm sm:text-base font-bold text-[#1F2937] tracking-tight group-hover:text-emerald-600 transition-colors truncate">
                         {p.name}
                       </p>
 
@@ -211,7 +211,7 @@ export default function TodayPurchaseSection({
                             id={`purchase-weight-select-${p.id}-${idx}`}
                             value={weightSelected}
                             onChange={(e) => handleWeightChange(p.id, e.target.value)}
-                            className="bg-slate-50 border border-slate-100 text-[10px] font-bold text-slate-700 pr-5 pl-1.5 py-0.5 rounded-md appearance-none focus:outline-none cursor-pointer group-hover/select:border-emerald-500 transition-all"
+                            className="bg-[#F5E6CA] border border-slate-100 text-[10px] font-bold text-slate-700 pr-5 pl-1.5 py-0.5 rounded-md appearance-none focus:outline-none cursor-pointer group-hover/select:border-emerald-500 transition-all"
                           >
                             {p.availableWeights.map(w => (
                               <option key={w} value={w}>{w}</option>
@@ -230,7 +230,7 @@ export default function TodayPurchaseSection({
                               id={`purchase-processing-select-${p.id}-${idx}`}
                               value={processingSelected}
                               onChange={(e) => handleProcessingChange(p.id, e.target.value)}
-                              className="bg-slate-50 border border-slate-100 text-[10px] font-bold text-slate-700 pr-5 pl-1.5 py-0.5 rounded-md appearance-none focus:outline-none cursor-pointer"
+                              className="bg-[#F5E6CA] border border-slate-100 text-[10px] font-bold text-slate-700 pr-5 pl-1.5 py-0.5 rounded-md appearance-none focus:outline-none cursor-pointer"
                             >
                               {p.processingOptions.map(o => (
                                 <option key={o} value={o}>{o}</option>
@@ -246,8 +246,8 @@ export default function TodayPurchaseSection({
                     <div className="mt-4 pt-2.5 border-t border-slate-100 flex items-center justify-between">
                       <div className="flex flex-col">
                         <div className="flex items-baseline gap-0.5">
-                          <span className="text-xs font-bold text-slate-900">₹</span>
-                          <span className="text-base font-extrabold text-slate-900">{currentPrice}</span>
+                          <span className="text-xs font-bold text-[#1F2937]">₹</span>
+                          <span className="text-base font-extrabold text-[#1F2937]">{currentPrice}</span>
                         </div>
                         <span className="text-[9px] text-slate-400 font-mono">/{weightSelected}</span>
                       </div>
