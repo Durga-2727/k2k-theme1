@@ -165,9 +165,9 @@ export function ProductImage({
             borderRadius: '50%',
             overflow: 'hidden',
             opacity: 1,
-            boxShadow: '0 2px 8px rgba(0,0,0,0.25), 0 0 0 1.5px rgba(255,255,255,0.9)',
+            boxShadow: '0 3px 10px rgba(0,0,0,0.3), 0 0 0 2.5px rgba(255,255,255,1)',
             backgroundColor: '#ffffff',
-            padding: '2.5px',
+            padding: '3.5px',
             transform: 'translateZ(0)',
           }}
         >
@@ -180,7 +180,7 @@ export function ProductImage({
               objectFit: 'contain',
               display: 'block',
               imageRendering: 'high-quality',
-              filter: 'contrast(1.2) saturate(1.15) brightness(1.05)',
+              filter: 'contrast(1.2) saturate(1.15) brightness(1.15)',
               backfaceVisibility: 'hidden',
               borderRadius: '50%',
               backgroundColor: '#ffffff',
