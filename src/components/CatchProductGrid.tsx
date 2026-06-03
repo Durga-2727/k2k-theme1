@@ -188,7 +188,7 @@ export default function CatchProductGrid({
                 setSelectedCategory('all');
                 setSortBy('popular');
               }}
-              className="mt-4 px-4 py-2 bg-slate-800 hover:bg-[#0F766E] text-white rounded-xl text-xs font-semibold cursor-pointer"
+              className="mt-4 px-4 py-2 bg-[#1F2937] hover:bg-[#0F766E] text-white rounded-xl text-xs font-semibold cursor-pointer"
             >
               Reset Category Filters
             </button>

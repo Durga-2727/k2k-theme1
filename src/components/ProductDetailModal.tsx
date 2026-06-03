@@ -209,7 +209,7 @@ export default function ProductDetailModal({
             </div>
 
             {/* Sourcing pricing box */}
-            <div className="p-3 bg-sky-50/40 border border-[#99F6E4]/50 rounded-xl flex items-center justify-between">
+            <div className="p-3 bg-[#99F6E4]/40 border border-[#99F6E4]/50 rounded-xl flex items-center justify-between">
               <div>
                 <span className="text-[8px] text-slate-400 uppercase font-mono tracking-wider">Sourcing Price:</span>
                 <div className="flex items-baseline gap-1 mt-0.5">

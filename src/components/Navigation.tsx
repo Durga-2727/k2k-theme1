@@ -168,7 +168,7 @@ export default function Navigation({
                       setSearchTerm(e.target.value);
                       onSearch(e.target.value);
                     }}
-                    className={`h-9 px-3 text-xs rounded-lg border focus:outline-none focus:ring-1 focus:ring-sky-500 mr-2 ${
+                    className={`h-9 px-3 text-xs rounded-lg border focus:outline-none focus:ring-1 focus:ring-[#99F6E4]0 mr-2 ${
                       isNavbarWhite ? 'bg-[#F5E6CA] border-gray-200 text-[#1F2937]' : 'bg-white/15 border-white/20 text-white placeholder-sky-200'
                     }`}
                   />
@@ -331,7 +331,7 @@ export default function Navigation({
                     setIsMobileMenuOpen(false);
                     setIsLoginModalOpen(true);
                   }}
-                  className="w-full flex items-center justify-center gap-2 bg-[#0F766E] hover:bg-[#0F766E] text-white font-semibold py-3 px-4 rounded-xl shadow-lg shadow-sky-950/40 transition-colors text-sm"
+                  className="w-full flex items-center justify-center gap-2 bg-[#0F766E] hover:bg-[#0F766E] text-white font-semibold py-3 px-4 rounded-xl shadow-lg shadow-[#0F766E]/40 transition-colors text-sm"
                 >
                   <User className="h-4 w-4" />
                   <span>{isLoggedIn ? 'Access Account' : 'Sign In Now'}</span>
@@ -381,7 +381,7 @@ export default function Navigation({
                     </div>
                     <h4 className="text-[#1F2937] font-semibold mb-1">Welcome Back!</h4>
                     <p className="text-xs text-[#1A1A2E] font-medium break-all mb-6">{userEmail || 'thiruvikram8925@gmail.com'}</p>
-                    <div className="p-3 bg-sky-50 border border-[#99F6E4] rounded-xl mb-6 text-xs text-[#0F766E] font-sans">
+                    <div className="p-3 bg-[#99F6E4] border border-[#99F6E4] rounded-xl mb-6 text-xs text-[#0F766E] font-sans">
                       Delivery Pin: <strong>600001 (Chennai Central)</strong> - Express same-morning routing active.
                     </div>
                     <button
@@ -412,7 +412,7 @@ export default function Navigation({
                         placeholder="yourname@gmail.com"
                         value={userEmail}
                         onChange={(e) => setUserEmail(e.target.value)}
-                        className="w-full px-3.5 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-[#0F766E] bg-[#F5E6CA]/50"
+                        className="w-full px-3.5 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-[#99F6E4]0 focus:border-[#0F766E] bg-[#F5E6CA]/50"
                       />
                     </div>
                     <div>
@@ -424,7 +424,7 @@ export default function Navigation({
                           required
                           pattern="[0-9]{10}"
                           placeholder="9876543210"
-                          className="flex-1 px-3.5 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-[#0F766E] bg-[#F5E6CA]/50"
+                          className="flex-1 px-3.5 py-2.5 border border-gray-200 rounded-xl text-sm focus:outline-none focus:ring-1 focus:ring-[#99F6E4]0 focus:border-[#0F766E] bg-[#F5E6CA]/50"
                         />
                       </div>
                     </div>

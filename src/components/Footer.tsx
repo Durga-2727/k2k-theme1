@@ -40,7 +40,7 @@ export default function Footer({ onNavigate }: FooterProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
         
         {/* Main Columns Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10 pb-16 border-b border-sky-950/50">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10 pb-16 border-b border-[#0F766E]/50">
           
           {/* Column 1: Brand & Logo Hook */}
           <div className="space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -61,7 +61,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <button
                   key={social}
                   id={`footer-social-${social.toLowerCase()}`}
-                  className="w-10 h-10 rounded-full bg-sky-950/60 border border-[#0F766E]/40 hover:border-[#99F6E4] hover:bg-[#0F766E]/20 text-[#99F6E4] hover:text-white transition-all duration-300 cursor-pointer flex items-center justify-center text-xs font-mono font-bold hover:shadow-[0_0_12px_rgba(0,180,216,0.25)] hover:-translate-y-1"
+                  className="w-10 h-10 rounded-full bg-[#0F766E]/60 border border-[#0F766E]/40 hover:border-[#99F6E4] hover:bg-[#0F766E]/20 text-[#99F6E4] hover:text-white transition-all duration-300 cursor-pointer flex items-center justify-center text-xs font-mono font-bold hover:shadow-[0_0_12px_rgba(0,180,216,0.25)] hover:-translate-y-1"
                   title={social}
                 >
                   {social.charAt(0)}
@@ -145,7 +145,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                   placeholder="name@email.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-10 pr-12 py-3 bg-sky-950/50 border border-sky-850 focus:border-[#99F6E4] focus:ring-1 focus:ring-[#99F6E4]/30 focus:outline-none rounded-xl text-xs text-white placeholder-sky-300/30 transition-all font-sans"
+                  className="w-full pl-10 pr-12 py-3 bg-[#0F766E]/50 border border-sky-850 focus:border-[#99F6E4] focus:ring-1 focus:ring-[#99F6E4]/30 focus:outline-none rounded-xl text-xs text-white placeholder-sky-300/30 transition-all font-sans"
                 />
                 <Mail className="h-4 w-4 absolute left-3.5 top-3.5 text-[#99F6E4]/40" />
                 <button
@@ -163,7 +163,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               )}
             </form>
 
-            <div className="flex items-center gap-2 text-[10.5px] leading-relaxed text-[#99F6E4]/50 pt-3 border-t border-sky-950 w-full justify-center lg:justify-start">
+            <div className="flex items-center gap-2 text-[10.5px] leading-relaxed text-[#99F6E4]/50 pt-3 border-t border-[#0F766E] w-full justify-center lg:justify-start">
               <Phone className="h-3.5 w-3.5 text-[#99F6E4]" strokeWidth={2.5} />
               <span className="font-mono tracking-wide">Support Core: +91 90050 40030</span>
             </div>
@@ -182,7 +182,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-sky-950/40 rounded-xl border border-[#0F766E]/40">
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-[#0F766E]/40 rounded-xl border border-[#0F766E]/40">
             <ShieldCheck className="h-4 w-4 text-emerald-400" />
             <span className="text-[11px] font-bold tracking-wider uppercase text-emerald-300 font-mono">Dual Gate Safe SSL Secured</span>
           </div>

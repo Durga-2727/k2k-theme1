@@ -140,7 +140,7 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
             className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-[81px] font-bold tracking-tight leading-[1.1]"
           >
             From Ocean Waves <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-aqua-200 to-sky-400">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#99F6E4] via-[#99F6E4] to-[#99F6E4]">
               to Your Kitchen Flames
             </span>
           </motion.h1>
@@ -220,7 +220,7 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
             <button
               id="hero-shop-btn"
               onClick={onShopClick}
-              className="w-full sm:w-auto px-8 py-4 bg-[#0F766E] hover:bg-[#0F766E] text-white font-bold text-sm rounded-2xl shadow-xl shadow-sky-950/40 hover:shadow-[#0F766E]/20 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2.5 cursor-pointer border border-[#0F766E]"
+              className="w-full sm:w-auto px-8 py-4 bg-[#0F766E] hover:bg-[#0F766E] text-white font-bold text-sm rounded-2xl shadow-xl shadow-[#0F766E]/40 hover:shadow-[#0F766E]/20 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2.5 cursor-pointer border border-[#0F766E]"
             >
               <ShoppingBag className="h-4.5 w-4.5" />
               <span>Shop Today's Catch</span>

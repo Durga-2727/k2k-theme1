@@ -19,7 +19,7 @@ export default function Testimonials() {
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 sm:mb-12">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-sky-50 border border-[#99F6E4] rounded-full mb-3 text-[10px] sm:text-xs uppercase font-bold text-[#0F766E] tracking-wider font-mono">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#99F6E4] border border-[#99F6E4] rounded-full mb-3 text-[10px] sm:text-xs uppercase font-bold text-[#0F766E] tracking-wider font-mono">
             <MessageSquare className="h-4 w-4 text-[#0F766E]" />
             <span>100% Genuine Reviews</span>
           </div>

@@ -194,7 +194,7 @@ export default function CartDrawer({
                     <button
                       id="cart-promo-apply-btn"
                       onClick={handleApplyPromo}
-                      className="px-4 py-2 bg-[#0F766E] border border-slate-900 text-white rounded-xl text-xs font-bold uppercase hover:bg-black transition-colors cursor-pointer"
+                      className="px-4 py-2 bg-[#0F766E] border border-[#1F2937] text-white rounded-xl text-xs font-bold uppercase hover:bg-black transition-colors cursor-pointer"
                     >
                       Apply
                     </button>
@@ -232,7 +232,7 @@ export default function CartDrawer({
                 <button
                   id="checkout-trigger-drawer"
                   onClick={() => onLaunchCheckout(finalSubtotal, discountValue)}
-                  className="w-full bg-[#0F766E] hover:bg-[#0F766E] text-white py-3.5 rounded-2xl text-xs tracking-widest uppercase font-bold shadow-lg shadow-sky-950/20 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer mt-4"
+                  className="w-full bg-[#0F766E] hover:bg-[#0F766E] text-white py-3.5 rounded-2xl text-xs tracking-widest uppercase font-bold shadow-lg shadow-[#0F766E]/20 transform hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2 cursor-pointer mt-4"
                 >
                   <span>Proceed to Safe Ordering</span>
                   <ArrowRight className="h-4 w-4" />
