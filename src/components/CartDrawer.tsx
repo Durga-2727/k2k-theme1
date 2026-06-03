@@ -200,7 +200,7 @@ export default function CartDrawer({
                     </button>
                   </div>
                   {promoFeedback && (
-                    <p className={`text-[10px] ${promoApplied ? 'text-emerald-600' : 'text-red-500'} font-semibold font-sans leading-normal`}>
+                    <p className={`text-[10px] ${promoApplied ? 'text-[#008080]' : 'text-red-500'} font-semibold font-sans leading-normal`}>
                       {promoFeedback}
                     </p>
                   )}
@@ -213,14 +213,14 @@ export default function CartDrawer({
                     <strong>₹{rawSubtotal}</strong>
                   </div>
                   {promoApplied && (
-                    <div className="flex justify-between items-center text-emerald-600">
+                    <div className="flex justify-between items-center text-[#008080]">
                       <span>Promo 15% Off discount:</span>
                       <strong>-₹{discountValue}</strong>
                     </div>
                   )}
                   <div className="flex justify-between items-center text-slate-500">
                     <span>Hygienic Ice Cold Shipping:</span>
-                    <strong className="text-emerald-600 uppercase font-bold">FREE Today</strong>
+                    <strong className="text-[#008080] uppercase font-bold">FREE Today</strong>
                   </div>
                   <div className="flex justify-between items-center text-[#1F2937] text-sm font-extrabold font-serif pt-2 border-t border-slate-200">
                     <span className="text-[#1F2937]">Immediate Final Billing:</span>

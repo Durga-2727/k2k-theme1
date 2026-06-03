@@ -157,7 +157,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 </button>
               </div>
               {subscribed && (
-                <p className="text-[11px] text-emerald-400 font-bold font-sans flex items-center gap-1 justify-center lg:justify-start">
+                <p className="text-[11px] text-[#FFB703] font-bold font-sans flex items-center gap-1 justify-center lg:justify-start">
                   <span>✓ Verified. Sourcing alerts routed to mailbox!</span>
                 </p>
               )}
@@ -183,8 +183,8 @@ export default function Footer({ onNavigate }: FooterProps) {
           </div>
 
           <div className="flex items-center gap-2 px-3 py-1.5 bg-[#008080]/40 rounded-xl border border-[#008080]/40">
-            <ShieldCheck className="h-4 w-4 text-emerald-400" />
-            <span className="text-[11px] font-bold tracking-wider uppercase text-emerald-300 font-mono">Dual Gate Safe SSL Secured</span>
+            <ShieldCheck className="h-4 w-4 text-[#FFB703]" />
+            <span className="text-[11px] font-bold tracking-wider uppercase text-[#FFB703] font-mono">Dual Gate Safe SSL Secured</span>
           </div>
         </div>
 
@@ -192,7 +192,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
       {/* Modern High-Aesthetic Modal Component replacement for alerts */}
       {supportMsg && (
-        <div className="fixed inset-0 bg-[#020224]/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div className="fixed inset-0 bg-[#003333]/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-white text-[#1F2937] p-8 rounded-3xl max-w-md w-full relative border border-slate-100 shadow-2xl flex flex-col items-center">
             <div className="w-12 h-12 rounded-full bg-[#008080]/10 mb-4 flex items-center justify-center text-[#008080]">
               <Anchor className="h-6 w-6" />
@@ -201,7 +201,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             <p className="text-xs sm:text-sm text-slate-600 font-sans whitespace-pre-line leading-relaxed text-center mb-6">{supportMsg}</p>
             <button
               onClick={() => setSupportMsg(null)}
-              className="w-full bg-[#008080] hover:bg-[#008080] text-white font-extrabold text-xs py-3 rounded-xl cursor-pointer transition-colors shadow-md hover:shadow-[#008080]/10"
+              className="w-full bg-[#008080] hover:bg-[#008080] text-white font-extrabold text-xs py-3 rounded-xl cursor-pointer transition-colors shadow-md hover:shadow-[#008080]/20"
             >
               Close Information Details
             </button>

@@ -104,7 +104,7 @@ export default function ProductDetailModal({
           {/* Sticky Header block */}
           <div className="flex justify-between items-center px-5 pt-5 pb-3 border-b border-slate-100 bg-white z-20">
             <div className="pr-8">
-              <span className="bg-emerald-50 border border-emerald-100 text-emerald-800 px-2 py-0.5 rounded-lg text-[9px] font-bold tracking-wider uppercase font-mono block w-fit mb-1">
+              <span className="bg-[#008080]/10 border border-[#FFB703]/30 text-[#008080] px-2 py-0.5 rounded-lg text-[9px] font-bold tracking-wider uppercase font-mono block w-fit mb-1">
                 CHEMICAL-FREE
               </span>
               <h2 className="font-serif text-lg sm:text-xl font-bold text-[#1F2937] tracking-tight leading-tight">
@@ -153,7 +153,7 @@ export default function ProductDetailModal({
                   <span className="bg-[#FFB703]/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-lg shadow-xs">
                     {product.catchLocation}
                   </span>
-                  <span className="bg-emerald-500/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-lg flex items-center gap-0.5 shadow-xs">
+                  <span className="bg-[#008080]/100/90 backdrop-blur-md text-white text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-lg flex items-center gap-0.5 shadow-xs">
                     <ShieldCheck className="h-3 w-3" />
                     <span>Dawn Sourced</span>
                   </span>
@@ -344,7 +344,7 @@ export default function ProductDetailModal({
                           </div>
                           <p className="text-[10px] text-slate-500 font-sans leading-tight">{rev.text}</p>
                         </div>
-                        <span className="bg-emerald-50 px-1 py-0.5 rounded text-[8px] font-bold text-emerald-700 shrink-0">
+                        <span className="bg-[#008080]/10 px-1 py-0.5 rounded text-[8px] font-bold text-[#008080] shrink-0">
                           ★ {rev.rating}
                         </span>
                       </div>
@@ -403,7 +403,7 @@ export default function ProductDetailModal({
               onClick={handleAddClick}
               className={`w-full py-3 rounded-xl cursor-pointer text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-md ${
                 isAddedFeedback
-                  ? 'bg-[#52B788] text-white shadow-emerald-50'
+                  ? 'bg-[#52B788] text-white shadow-[#FFB703]/10'
                   : 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 text-white shadow-orange-500/20'
               }`}
             >

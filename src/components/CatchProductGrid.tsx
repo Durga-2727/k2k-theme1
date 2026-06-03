@@ -120,8 +120,8 @@ export default function CatchProductGrid({
         {/* Header Block */}
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 mb-12">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full mb-3 text-[10px] uppercase font-bold text-emerald-700 tracking-wider">
-              <RefreshCw className="h-3 w-3 animate-spin duration-3000 text-emerald-600" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#008080]/10 border border-[#FFB703]/30 rounded-full mb-3 text-[10px] uppercase font-bold text-[#008080] tracking-wider">
+              <RefreshCw className="h-3 w-3 animate-spin duration-3000 text-[#008080]" />
               <span>Live: Sourced At Dawn Today</span>
             </div>
             <h2 className="font-serif text-3xl sm:text-4xl font-semibold text-[#1F2937] tracking-tight">
@@ -349,7 +349,7 @@ export default function CatchProductGrid({
                         onClick={() => triggerAddToCart(p)}
                         className={`px-4 py-2.5 rounded-xl cursor-pointer text-xs font-bold transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm ${
                           isFirstAdded
-                            ? 'bg-[#52B788] text-white shadow-emerald-100'
+                            ? 'bg-[#52B788] text-white shadow-[#FFB703]/20'
                             : 'bg-gradient-to-r from-orange-500 to-amber-500 text-white hover:from-orange-600 hover:to-amber-600 hover:shadow-md shadow-orange-100'
                         }`}
                       >

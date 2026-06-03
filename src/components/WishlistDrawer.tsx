@@ -124,7 +124,7 @@ export default function WishlistDrawer({
                     <div className="flex-1 truncate">
                       <span className="text-[9px] font-bold text-[#008080] block uppercase font-mono">{p.localName}</span>
                       <h4 className="text-xs sm:text-sm font-serif font-bold text-[#1F2937] truncate block group-hover:text-[#008080] transition-colors">{p.name}</h4>
-                      <p className="text-[10px] text-emerald-600 font-semibold font-mono mt-0.5">
+                      <p className="text-[10px] text-[#008080] font-semibold font-mono mt-0.5">
                         ₹{p.price} <span className="text-slate-400 font-normal">/{p.unit} Base</span>
                       </p>
                     </div>

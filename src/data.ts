@@ -43,7 +43,7 @@ export const FISHERMEN: Fisherman[] = [
     partnerSince: '2021',
     rating: 4.9,
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80',
-    avatarColor: 'bg-emerald-600'
+    avatarColor: 'bg-[#008080]'
   },
   {
     name: 'Anthony Xavier',
@@ -78,7 +78,7 @@ export const TESTIMONIALS: Testimonial[] = [
     city: 'Nungambakkam',
     quote: 'Sankara fish curry was top level. Authentic taste and very neatly cleaned slices.',
     rating: 5,
-    avatarColor: 'bg-emerald-600'
+    avatarColor: 'bg-[#008080]'
   },
   {
     id: '4',

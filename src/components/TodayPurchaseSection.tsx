@@ -106,14 +106,14 @@ export default function TodayPurchaseSection({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-6 sm:mb-8">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 border border-emerald-100 rounded-full mb-3 text-[10px] sm:text-xs uppercase font-bold text-emerald-700 tracking-wider font-mono">
-            <PackageCheck className="h-4.5 w-4.5 text-emerald-600" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 bg-[#008080]/10 border border-[#FFB703]/30 rounded-full mb-3 text-[10px] sm:text-xs uppercase font-bold text-[#008080] tracking-wider font-mono">
+            <PackageCheck className="h-4.5 w-4.5 text-[#008080]" />
             <span>Community Social Proof</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-black text-[#1F2937] tracking-tight">
             Today's Purchases
           </h2>
-          <div className="w-16 h-1 bg-emerald-500 mx-auto mt-4 rounded-full" />
+          <div className="w-16 h-1 bg-[#008080]/100 mx-auto mt-4 rounded-full" />
           <p className="text-xs sm:text-sm text-slate-500 mt-4 leading-relaxed font-sans max-w-xl mx-auto">
             Real-time visual diary of what other coastal lovers are cooking right now in their Chennai kitchens. Direct from Dawn, dispatched to home.
           </p>
@@ -165,7 +165,7 @@ export default function TodayPurchaseSection({
                     </div>
 
                     {/* Social proof absolute countdown strip */}
-                    <div className="absolute bottom-2.5 left-2.5 z-20 text-[9px] font-bold font-sans text-white bg-emerald-600/90 backdrop-blur-xs px-2.5 py-0.5 rounded-lg flex items-center gap-1 shadow-sm">
+                    <div className="absolute bottom-2.5 left-2.5 z-20 text-[9px] font-bold font-sans text-white bg-[#008080]/90 backdrop-blur-xs px-2.5 py-0.5 rounded-lg flex items-center gap-1 shadow-sm">
                       <span className="w-1.5 h-1.5 bg-emerald-300 rounded-full animate-ping" />
                       <span>{stats.count} households bought today</span>
                     </div>
@@ -176,7 +176,7 @@ export default function TodayPurchaseSection({
                     <div>
                       {/* Sub-label and Popularity Indicator */}
                       <div className="flex items-center justify-between gap-1 mb-1">
-                        <span className="text-[9px] sm:text-[10px] font-bold tracking-wider text-emerald-600 uppercase font-mono block max-w-[120px] truncate">
+                        <span className="text-[9px] sm:text-[10px] font-bold tracking-wider text-[#008080] uppercase font-mono block max-w-[120px] truncate">
                           {p.localName}
                         </span>
                         <span className="text-[9px] font-bold text-slate-500 font-sans tracking-wide shrink-0">
@@ -185,7 +185,7 @@ export default function TodayPurchaseSection({
                       </div>
 
                       {/* Name of Product */}
-                      <p className="font-serif text-sm sm:text-base font-bold text-[#1F2937] tracking-tight group-hover:text-emerald-600 transition-colors truncate">
+                      <p className="font-serif text-sm sm:text-base font-bold text-[#1F2937] tracking-tight group-hover:text-[#008080] transition-colors truncate">
                         {p.name}
                       </p>
 
@@ -197,7 +197,7 @@ export default function TodayPurchaseSection({
                         </div>
                         <div className="w-full h-1 bg-slate-200/60 rounded-full overflow-hidden">
                           <div 
-                            className="h-full bg-emerald-500 rounded-full transition-all duration-1000" 
+                            className="h-full bg-[#008080]/100 rounded-full transition-all duration-1000" 
                             style={{ width: `${stats.demandPercentage}%` }}
                           />
                         </div>
@@ -211,7 +211,7 @@ export default function TodayPurchaseSection({
                             id={`purchase-weight-select-${p.id}-${idx}`}
                             value={weightSelected}
                             onChange={(e) => handleWeightChange(p.id, e.target.value)}
-                            className="bg-[#FFF8E7] border border-slate-100 text-[10px] font-bold text-slate-700 pr-5 pl-1.5 py-0.5 rounded-md appearance-none focus:outline-none cursor-pointer group-hover/select:border-emerald-500 transition-all"
+                            className="bg-[#FFF8E7] border border-slate-100 text-[10px] font-bold text-slate-700 pr-5 pl-1.5 py-0.5 rounded-md appearance-none focus:outline-none cursor-pointer group-hover/select:border-[#FFB703]/200 transition-all"
                           >
                             {p.availableWeights.map(w => (
                               <option key={w} value={w}>{w}</option>
@@ -257,7 +257,7 @@ export default function TodayPurchaseSection({
                         onClick={(e) => triggerAddToCart(e, p)}
                         className={`p-2 px-3 rounded-xl cursor-pointer text-[10px] sm:text-xs font-extrabold transition-all duration-300 flex items-center gap-1 shadow-sm ${
                           isFirstAdded
-                            ? 'bg-[#52B788] text-white shadow-emerald-50'
+                            ? 'bg-[#52B788] text-white shadow-[#FFB703]/10'
                             : 'bg-gradient-to-r from-orange-500 to-amber-500 text-white hover:from-orange-600 hover:to-amber-600 hover:shadow-md shadow-orange-100'
                         }`}
                       >

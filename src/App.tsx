@@ -438,9 +438,9 @@ export default function App() {
               {checkoutStep === 'payment' && (
                 <div className="p-6 sm:p-8 space-y-4">
                   
-                  <div className="p-4 bg-emerald-50 border border-emerald-100 rounded-2xl flex items-center gap-3">
-                    <Sparkles className="h-5 w-5 text-emerald-600 shrink-0" />
-                    <p className="text-[11px] text-emerald-800 leading-normal font-sans font-semibold">
+                  <div className="p-4 bg-[#008080]/10 border border-[#FFB703]/30 rounded-2xl flex items-center gap-3">
+                    <Sparkles className="h-5 w-5 text-[#008080] shrink-0" />
+                    <p className="text-[11px] text-[#008080] leading-normal font-sans font-semibold">
                       Your morning catch is already soft-reserved in the harbor freezer crates. Sourced direct guaranteed!
                     </p>
                   </div>
@@ -499,7 +499,7 @@ export default function App() {
               {checkoutStep === 'completed' && (
                 <div className="p-6 sm:p-8 text-center space-y-6">
                   
-                  <div className="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto shadow-md">
+                  <div className="w-16 h-16 bg-[#FFB703]/15 text-[#008080] rounded-full flex items-center justify-center mx-auto shadow-md">
                     <CheckCircle className="h-8 w-8 animate-bounce" />
                   </div>
 
@@ -524,7 +524,7 @@ export default function App() {
                     </div>
                     <div className="flex justify-between">
                       <span className="text-slate-400">Cold Delivery Delivery:</span>
-                      <strong className="text-emerald-600 font-bold uppercase">To-Morning 7:30 AM</strong>
+                      <strong className="text-[#008080] font-bold uppercase">To-Morning 7:30 AM</strong>
                     </div>
                   </div>
 

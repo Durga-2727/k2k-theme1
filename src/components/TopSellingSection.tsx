@@ -240,7 +240,7 @@ export default function TopSellingSection({
                         onClick={(e) => triggerAddToCart(e, p)}
                         className={`p-2 px-3 rounded-xl cursor-pointer text-[10px] sm:text-xs font-extrabold transition-all duration-300 flex items-center gap-1 shadow-sm ${
                           isFirstAdded
-                            ? 'bg-[#52B788] text-white shadow-emerald-50'
+                            ? 'bg-[#52B788] text-white shadow-[#FFB703]/10'
                             : 'bg-gradient-to-r from-orange-500 to-amber-500 text-white hover:from-orange-600 hover:to-amber-600 hover:shadow-md shadow-orange-100'
                         }`}
                       >

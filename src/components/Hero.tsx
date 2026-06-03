@@ -244,16 +244,16 @@ export default function Hero({ onShopClick, onExploreClick }: HeroProps) {
           className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto mt-10 pt-8 border-t border-white/10 text-xs tracking-wide text-[#FFB703]/70 font-mono font-medium"
         >
           <div className="flex items-center justify-center gap-2">
-            <span className="text-emerald-400 font-bold">✓</span> CHEMICAL-FREE
+            <span className="text-[#FFB703] font-bold">✓</span> CHEMICAL-FREE
           </div>
           <div className="flex items-center justify-center gap-2">
-            <span className="text-emerald-400 font-bold">✓</span> COLD CHAIN TRACKED
+            <span className="text-[#FFB703] font-bold">✓</span> COLD CHAIN TRACKED
           </div>
           <div className="flex items-center justify-center gap-2">
-            <span className="text-emerald-400 font-bold">✓</span> HYGIENICALLY CUT
+            <span className="text-[#FFB703] font-bold">✓</span> HYGIENICALLY CUT
           </div>
           <div className="flex items-center justify-center gap-2">
-            <span className="text-emerald-400 font-bold">✓</span> ORDER BEFORE 7 AM
+            <span className="text-[#FFB703] font-bold">✓</span> ORDER BEFORE 7 AM
           </div>
         </motion.div>
 

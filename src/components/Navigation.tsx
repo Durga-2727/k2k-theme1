@@ -121,7 +121,7 @@ export default function Navigation({
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
-                <span style={{ color: isNavbarWhite ? (currentPage === 'home' ? '#ffffff' : '#0c0c0c') : undefined }}>Home Page</span>
+                <span style={{ color: isNavbarWhite ? (currentPage === 'home' ? '#ffffff' : '#1F2937') : undefined }}>Home Page</span>
               </button>
 
               <button
@@ -145,7 +145,7 @@ export default function Navigation({
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
-                <span style={{ color: isNavbarWhite ? (currentPage === 'market' ? '#ffffff' : '#0a0b0b') : undefined }}>Marketplace</span>
+                <span style={{ color: isNavbarWhite ? (currentPage === 'market' ? '#ffffff' : '#1F2937') : undefined }}>Marketplace</span>
               </button>
             </div>
           </nav>
@@ -168,7 +168,7 @@ export default function Navigation({
                       setSearchTerm(e.target.value);
                       onSearch(e.target.value);
                     }}
-                    className={`h-9 px-3 text-xs rounded-lg border focus:outline-none focus:ring-1 focus:ring-[#FFB703]0 mr-2 ${
+                    className={`h-9 px-3 text-xs rounded-lg border focus:outline-none focus:ring-1 focus:ring-[#FFB703] mr-2 ${
                       isNavbarWhite ? 'bg-[#FFF8E7] border-gray-200 text-[#1F2937]' : 'bg-white/15 border-white/20 text-white placeholder-[#FFB703]/30'
                     }`}
                   />
@@ -188,7 +188,7 @@ export default function Navigation({
                   isNavbarWhite ? 'text-gray-600 hover:bg-gray-100' : 'text-white hover:bg-white/10'
                 }`}
               >
-                <Search className="h-5 w-5" style={{ color: isNavbarWhite ? '#050505' : undefined }} />
+                <Search className="h-5 w-5" style={{ color: isNavbarWhite ? '#1F2937' : undefined }} />
               </button>
             </form>
 
@@ -200,7 +200,7 @@ export default function Navigation({
                 isNavbarWhite ? 'text-gray-600 hover:bg-gray-100' : 'text-white hover:bg-white/10'
               }`}
             >
-              <Heart className={`h-5 w-5 ${wishlist.length > 0 ? 'fill-rose-500 text-rose-500' : ''}`} style={{ color: isNavbarWhite ? '#080707' : undefined }} />
+              <Heart className={`h-5 w-5 ${wishlist.length > 0 ? 'fill-rose-500 text-rose-500' : ''}`} style={{ color: isNavbarWhite ? '#1F2937' : undefined }} />
               {wishlist.length > 0 && (
                 <span className="absolute -top-0.5 -right-0.5 bg-rose-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
                   {wishlist.length}
@@ -216,7 +216,7 @@ export default function Navigation({
                 isNavbarWhite ? 'text-gray-600 hover:bg-gray-100' : 'text-white hover:bg-white/10'
               }`}
             >
-              <ShoppingBag className="h-5 w-5" style={{ color: isNavbarWhite ? '#030303' : undefined }} />
+              <ShoppingBag className="h-5 w-5" style={{ color: isNavbarWhite ? '#1F2937' : undefined }} />
               {totalCartItems > 0 && (
                 <span className="absolute -top-0.5 -right-0.5 bg-[#008080] text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">
                   {totalCartItems}
@@ -233,9 +233,9 @@ export default function Navigation({
                   ? 'text-gray-700 hover:bg-gray-100 border border-gray-200 shadow-sm px-3 h-9'
                   : 'text-white hover:bg-white/10 border border-white/20 px-3 h-9 bg-white/5'
               }`}
-              style={{ color: isNavbarWhite ? '#100f0f' : undefined }}
+              style={{ color: isNavbarWhite ? '#1F2937' : undefined }}
             >
-              <User className="h-4 w-4" style={{ color: isNavbarWhite ? '#100f0f' : undefined }} />
+              <User className="h-4 w-4" style={{ color: isNavbarWhite ? '#1F2937' : undefined }} />
               <span>{isLoggedIn ? 'Account' : 'Login'}</span>
             </button>
 
@@ -380,7 +380,7 @@ export default function Navigation({
                       {userEmail ? userEmail.charAt(0).toUpperCase() : 'U'}
                     </div>
                     <h4 className="text-[#1F2937] font-semibold mb-1">Welcome Back!</h4>
-                    <p className="text-xs text-[#1A1A2E] font-medium break-all mb-6">{userEmail || 'thiruvikram8925@gmail.com'}</p>
+                    <p className="text-xs text-[#1F2937] font-medium break-all mb-6">{userEmail || 'thiruvikram8925@gmail.com'}</p>
                     <div className="p-3 bg-[#FFB703] border border-[#FFB703] rounded-xl mb-6 text-xs text-[#008080] font-sans">
                       Delivery Pin: <strong>600001 (Chennai Central)</strong> - Express same-morning routing active.
                     </div>
