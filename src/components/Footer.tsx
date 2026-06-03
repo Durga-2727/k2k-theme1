@@ -28,19 +28,19 @@ export default function Footer({ onNavigate }: FooterProps) {
   };
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#0F766E] to-[#01012B] text-white overflow-hidden border-t-2 border-[#99F6E4]/20">
+    <footer className="relative bg-gradient-to-b from-[#008080] to-[#003333] text-white overflow-hidden border-t-2 border-[#FFB703]/20">
       
       {/* Dynamic Ambient Sea Waterglow Background elements */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#0F766E]/15 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#0F766E]/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#008080]/15 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#008080]/30 rounded-full blur-3xl pointer-events-none" />
       
       {/* Symmetrical Top Wave Line SVG Divider */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#99F6E4]/40 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#FFB703]/40 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16 relative z-10">
         
         {/* Main Columns Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10 pb-16 border-b border-[#0F766E]/50">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10 pb-16 border-b border-[#008080]/50">
           
           {/* Column 1: Brand & Logo Hook */}
           <div className="space-y-6 flex flex-col items-center lg:items-start text-center lg:text-left">
@@ -51,7 +51,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               <Logo className="h-40 w-40 shrink-0 drop-shadow-[0_4px_12px_rgba(0,180,216,0.15)]" />
             </div>
             
-            <p className="text-[13px] text-[#99F6E4]/75 leading-relaxed font-sans font-light max-w-sm">
+            <p className="text-[13px] text-[#FFB703]/75 leading-relaxed font-sans font-light max-w-sm">
               South India’s premier digital seafood dock. Sourcing early dawn catches directly from coastal catamarans, packing with absolute cold chain integration.
             </p>
 
@@ -61,7 +61,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                 <button
                   key={social}
                   id={`footer-social-${social.toLowerCase()}`}
-                  className="w-10 h-10 rounded-full bg-[#0F766E]/60 border border-[#0F766E]/40 hover:border-[#99F6E4] hover:bg-[#0F766E]/20 text-[#99F6E4] hover:text-white transition-all duration-300 cursor-pointer flex items-center justify-center text-xs font-mono font-bold hover:shadow-[0_0_12px_rgba(0,180,216,0.25)] hover:-translate-y-1"
+                  className="w-10 h-10 rounded-full bg-[#008080]/60 border border-[#008080]/40 hover:border-[#FFB703] hover:bg-[#008080]/20 text-[#FFB703] hover:text-white transition-all duration-300 cursor-pointer flex items-center justify-center text-xs font-mono font-bold hover:shadow-[0_0_12px_rgba(0,180,216,0.25)] hover:-translate-y-1"
                   title={social}
                 >
                   {social.charAt(0)}
@@ -72,10 +72,10 @@ export default function Footer({ onNavigate }: FooterProps) {
 
           {/* Column 2: Marketplace Navigation */}
           <div className="space-y-4 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <h4 className="text-[#99F6E4] font-extrabold uppercase tracking-widest text-[12px] font-mono">
+            <h4 className="text-[#FFB703] font-extrabold uppercase tracking-widest text-[12px] font-mono">
               Marketplace
             </h4>
-            <div className="w-8 h-[2px] bg-[#99F6E4]/40 mx-auto lg:mx-0 rounded-full" />
+            <div className="w-8 h-[2px] bg-[#FFB703]/40 mx-auto lg:mx-0 rounded-full" />
             <ul className="space-y-3 pt-2 w-full flex flex-col items-center lg:items-start">
               {[
                 { name: 'Dawn Sourcing Map', action: 'marketplace-hub' },
@@ -89,7 +89,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                   <button
                     id={`footer-market-link-${i}`}
                     onClick={() => onNavigate(link.action)}
-                    className="text-[#99F6E4]/70 hover:text-white hover:underline decoration-[#99F6E4] decoration-2 underline-offset-4 transition-all text-xs font-sans font-medium cursor-pointer"
+                    className="text-[#FFB703]/70 hover:text-white hover:underline decoration-[#FFB703] decoration-2 underline-offset-4 transition-all text-xs font-sans font-medium cursor-pointer"
                   >
                     {link.name}
                   </button>
@@ -100,10 +100,10 @@ export default function Footer({ onNavigate }: FooterProps) {
 
           {/* Column 3: High-Touch Support & Help Desk Links */}
           <div className="space-y-4 flex flex-col items-center lg:items-start text-center lg:text-left">
-            <h4 className="text-[#99F6E4] font-extrabold uppercase tracking-widest text-[12px] font-mono">
+            <h4 className="text-[#FFB703] font-extrabold uppercase tracking-widest text-[12px] font-mono">
               Support & Help
             </h4>
-            <div className="w-8 h-[2px] bg-[#99F6E4]/40 mx-auto lg:mx-0 rounded-full" />
+            <div className="w-8 h-[2px] bg-[#FFB703]/40 mx-auto lg:mx-0 rounded-full" />
             <ul className="space-y-3 pt-2 w-full flex flex-col items-center lg:items-start">
               {[
                 { name: 'Contact Command Desk', action: 'direct-support' },
@@ -116,7 +116,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                   <button
                     id={`footer-support-link-${i}`}
                     onClick={() => setSupportMsg(`Kadal 2 Kadaai Sourcing Support Desk: Sourced at dawn logistics coverage.\nOperational hours: 6:00 AM - 10:00 PM.\nWhatsApp Support: +91 90050 40030.`)}
-                    className="text-[#99F6E4]/70 hover:text-white hover:underline decoration-[#99F6E4] decoration-2 underline-offset-4 transition-all text-xs font-sans font-medium cursor-pointer text-center lg:text-left"
+                    className="text-[#FFB703]/70 hover:text-white hover:underline decoration-[#FFB703] decoration-2 underline-offset-4 transition-all text-xs font-sans font-medium cursor-pointer text-center lg:text-left"
                   >
                     {link.name}
                   </button>
@@ -128,11 +128,11 @@ export default function Footer({ onNavigate }: FooterProps) {
           {/* Column 4: High-Convert Premium Newsletter Frame */}
           <div className="space-y-5 flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="space-y-1.5 w-full flex flex-col items-center lg:items-start">
-              <h4 className="text-[#99F6E4] font-extrabold uppercase tracking-widest text-[12px] font-mono">
+              <h4 className="text-[#FFB703] font-extrabold uppercase tracking-widest text-[12px] font-mono">
                 Direct Dawn Memo
               </h4>
-              <div className="w-8 h-[2px] bg-[#99F6E4]/40 mx-auto lg:mx-0 rounded-full" />
-              <p className="text-[11px] text-[#99F6E4]/60 leading-normal font-sans pt-1 max-w-sm">
+              <div className="w-8 h-[2px] bg-[#FFB703]/40 mx-auto lg:mx-0 rounded-full" />
+              <p className="text-[11px] text-[#FFB703]/60 leading-normal font-sans pt-1 max-w-sm">
                 Sign up to receive early morning daily auction alerts and live catamaran catalog discounts.
               </p>
             </div>
@@ -145,13 +145,13 @@ export default function Footer({ onNavigate }: FooterProps) {
                   placeholder="name@email.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full pl-10 pr-12 py-3 bg-[#0F766E]/50 border border-sky-850 focus:border-[#99F6E4] focus:ring-1 focus:ring-[#99F6E4]/30 focus:outline-none rounded-xl text-xs text-white placeholder-sky-300/30 transition-all font-sans"
+                  className="w-full pl-10 pr-12 py-3 bg-[#008080]/50 border border-[#008080] focus:border-[#FFB703] focus:ring-1 focus:ring-[#FFB703]/30 focus:outline-none rounded-xl text-xs text-white placeholder-[#FFB703]/30 transition-all font-sans"
                 />
-                <Mail className="h-4 w-4 absolute left-3.5 top-3.5 text-[#99F6E4]/40" />
+                <Mail className="h-4 w-4 absolute left-3.5 top-3.5 text-[#FFB703]/40" />
                 <button
                   id="footer-subscribe-btn"
                   type="submit"
-                  className="absolute right-1.5 top-1.5 p-2 bg-[#0F766E] hover:bg-[#0F766E] text-white rounded-lg transition-all cursor-pointer flex items-center justify-center hover:shadow-[0_0_10px_rgba(0,180,216,0.3)] duration-300"
+                  className="absolute right-1.5 top-1.5 p-2 bg-[#008080] hover:bg-[#008080] text-white rounded-lg transition-all cursor-pointer flex items-center justify-center hover:shadow-[0_0_10px_rgba(0,180,216,0.3)] duration-300"
                 >
                   {subscribed ? <Check className="h-3.5 w-3.5 text-white" /> : <Send className="h-3.5 w-3.5 text-white" />}
                 </button>
@@ -163,8 +163,8 @@ export default function Footer({ onNavigate }: FooterProps) {
               )}
             </form>
 
-            <div className="flex items-center gap-2 text-[10.5px] leading-relaxed text-[#99F6E4]/50 pt-3 border-t border-[#0F766E] w-full justify-center lg:justify-start">
-              <Phone className="h-3.5 w-3.5 text-[#99F6E4]" strokeWidth={2.5} />
+            <div className="flex items-center gap-2 text-[10.5px] leading-relaxed text-[#FFB703]/50 pt-3 border-t border-[#008080] w-full justify-center lg:justify-start">
+              <Phone className="h-3.5 w-3.5 text-[#FFB703]" strokeWidth={2.5} />
               <span className="font-mono tracking-wide">Support Core: +91 90050 40030</span>
             </div>
           </div>
@@ -172,7 +172,7 @@ export default function Footer({ onNavigate }: FooterProps) {
         </div>
 
         {/* Footer Deep-Bottom Corporate Bar */}
-        <div className="pt-8 text-xs text-[#99F6E4]/40 font-mono flex flex-col lg:flex-row items-center justify-between gap-6">
+        <div className="pt-8 text-xs text-[#FFB703]/40 font-mono flex flex-col lg:flex-row items-center justify-between gap-6">
           <div className="flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-6 text-center lg:text-left">
             <span className="font-sans font-light">© 2026 Kadal 2 Kadaai Foodworks Private Limited</span>
             <div className="flex justify-center gap-3">
@@ -182,7 +182,7 @@ export default function Footer({ onNavigate }: FooterProps) {
             </div>
           </div>
 
-          <div className="flex items-center gap-2 px-3 py-1.5 bg-[#0F766E]/40 rounded-xl border border-[#0F766E]/40">
+          <div className="flex items-center gap-2 px-3 py-1.5 bg-[#008080]/40 rounded-xl border border-[#008080]/40">
             <ShieldCheck className="h-4 w-4 text-emerald-400" />
             <span className="text-[11px] font-bold tracking-wider uppercase text-emerald-300 font-mono">Dual Gate Safe SSL Secured</span>
           </div>
@@ -194,14 +194,14 @@ export default function Footer({ onNavigate }: FooterProps) {
       {supportMsg && (
         <div className="fixed inset-0 bg-[#020224]/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
           <div className="bg-white text-[#1F2937] p-8 rounded-3xl max-w-md w-full relative border border-slate-100 shadow-2xl flex flex-col items-center">
-            <div className="w-12 h-12 rounded-full bg-[#0F766E]/10 mb-4 flex items-center justify-center text-[#0F766E]">
+            <div className="w-12 h-12 rounded-full bg-[#008080]/10 mb-4 flex items-center justify-center text-[#008080]">
               <Anchor className="h-6 w-6" />
             </div>
-            <h4 className="font-serif text-xl font-bold text-[#0F766E] mb-3 text-center">Sourcing Helpdesk Info</h4>
+            <h4 className="font-serif text-xl font-bold text-[#008080] mb-3 text-center">Sourcing Helpdesk Info</h4>
             <p className="text-xs sm:text-sm text-slate-600 font-sans whitespace-pre-line leading-relaxed text-center mb-6">{supportMsg}</p>
             <button
               onClick={() => setSupportMsg(null)}
-              className="w-full bg-[#0F766E] hover:bg-[#0F766E] text-white font-extrabold text-xs py-3 rounded-xl cursor-pointer transition-colors shadow-md hover:shadow-[#0F766E]/10"
+              className="w-full bg-[#008080] hover:bg-[#008080] text-white font-extrabold text-xs py-3 rounded-xl cursor-pointer transition-colors shadow-md hover:shadow-[#008080]/10"
             >
               Close Information Details
             </button>

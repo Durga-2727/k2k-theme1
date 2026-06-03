@@ -60,11 +60,11 @@ export default function WishlistDrawer({
             className="w-full max-w-md h-full bg-white shadow-2xl flex flex-col justify-between"
           >
             {/* Header info bar */}
-            <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-[#0F766E] text-white">
+            <div className="p-6 border-b border-gray-100 flex items-center justify-between bg-[#008080] text-white">
               <div className="flex items-center gap-2">
                 <Heart className="h-5 w-5 text-rose-400 fill-rose-400" />
                 <h3 className="font-serif text-lg font-bold">Your Saved Catch</h3>
-                <span className="bg-[#99F6E4]/20 text-[#99F6E4] text-xs px-2 py-0.5 rounded-full font-bold">
+                <span className="bg-[#FFB703]/20 text-[#FFB703] text-xs px-2 py-0.5 rounded-full font-bold">
                   {wishlistIds.length} Saved
                 </span>
               </div>
@@ -92,7 +92,7 @@ export default function WishlistDrawer({
                       onClose();
                       onShopNow?.();
                     }}
-                    className="mt-4 px-5 py-2.5 bg-[#0F766E] text-white rounded-xl text-xs font-bold tracking-wider uppercase cursor-pointer"
+                    className="mt-4 px-5 py-2.5 bg-[#008080] text-white rounded-xl text-xs font-bold tracking-wider uppercase cursor-pointer"
                   >
                     Browse Catch Rosters
                   </button>
@@ -106,7 +106,7 @@ export default function WishlistDrawer({
                       onSelectProduct(p);
                       onClose();
                     }}
-                    className="bg-[#F5E6CA] border border-slate-100 px-3.5 py-4 rounded-2xl flex gap-3.5 items-center justify-between relative group cursor-pointer hover:shadow-md transition-all duration-300"
+                    className="bg-[#FFF8E7] border border-slate-100 px-3.5 py-4 rounded-2xl flex gap-3.5 items-center justify-between relative group cursor-pointer hover:shadow-md transition-all duration-300"
                   >
                     
                     {/* Circle/Box Image */}
@@ -122,8 +122,8 @@ export default function WishlistDrawer({
 
                     {/* Mid details */}
                     <div className="flex-1 truncate">
-                      <span className="text-[9px] font-bold text-[#0F766E] block uppercase font-mono">{p.localName}</span>
-                      <h4 className="text-xs sm:text-sm font-serif font-bold text-[#1F2937] truncate block group-hover:text-[#0F766E] transition-colors">{p.name}</h4>
+                      <span className="text-[9px] font-bold text-[#008080] block uppercase font-mono">{p.localName}</span>
+                      <h4 className="text-xs sm:text-sm font-serif font-bold text-[#1F2937] truncate block group-hover:text-[#008080] transition-colors">{p.name}</h4>
                       <p className="text-[10px] text-emerald-600 font-semibold font-mono mt-0.5">
                         ₹{p.price} <span className="text-slate-400 font-normal">/{p.unit} Base</span>
                       </p>
@@ -158,11 +158,11 @@ export default function WishlistDrawer({
             </div>
 
             {/* Bottom Actions columns */}
-            <div className="p-6 border-t border-gray-100 bg-[#F5E6CA]">
+            <div className="p-6 border-t border-gray-100 bg-[#FFF8E7]">
               <button
                 id="wishlist-close-bottom-btn"
                 onClick={onClose}
-                className="w-full bg-[#0F766E] hover:bg-black text-white text-xs font-bold tracking-widest uppercase py-3.5 rounded-xl cursor-pointer"
+                className="w-full bg-[#008080] hover:bg-black text-white text-xs font-bold tracking-widest uppercase py-3.5 rounded-xl cursor-pointer"
               >
                 Close Saved Items
               </button>

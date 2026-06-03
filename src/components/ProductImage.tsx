@@ -105,20 +105,20 @@ export function ProductImage({
 
   if (hasError && !isCustom) {
     return (
-      <div className="group/img relative w-full h-full flex flex-col items-center justify-center p-4 bg-[#F5E6CA] text-slate-500 rounded-2xl border-2 border-dashed border-slate-200 select-none text-center">
-        <UploadCloud className="w-8 h-8 text-[#0F766E] mb-2 animate-bounce" />
+      <div className="group/img relative w-full h-full flex flex-col items-center justify-center p-4 bg-[#FFF8E7] text-slate-500 rounded-2xl border-2 border-dashed border-slate-200 select-none text-center">
+        <UploadCloud className="w-8 h-8 text-[#008080] mb-2 animate-bounce" />
         <span className="text-[11px] font-bold text-slate-700 block line-clamp-1 font-mono">
           {filename}
         </span>
         <button
           onClick={triggerUpload}
-          className="mt-2 text-[10px] bg-[#0F766E] hover:bg-[#0F766E] text-white font-medium py-1 px-2.5 rounded-full shadow-sm flex items-center gap-1 transition-colors"
+          className="mt-2 text-[10px] bg-[#008080] hover:bg-[#008080] text-white font-medium py-1 px-2.5 rounded-full shadow-sm flex items-center gap-1 transition-colors"
         >
           <Camera className="w-3 h-3" />
           Click to Upload Image
         </button>
         <span className="text-[9px] text-slate-400 mt-2 block">
-          Or place your image in <code className="bg-slate-100 px-1 py-0.5 rounded text-[#0F766E] font-semibold font-mono">public/</code>
+          Or place your image in <code className="bg-slate-100 px-1 py-0.5 rounded text-[#008080] font-semibold font-mono">public/</code>
         </span>
         <input
           type="file"
@@ -206,7 +206,7 @@ export function ProductImage({
             title="Upload Custom Image"
             className="p-2 bg-white/90 hover:bg-white text-[#1F2937] rounded-full shadow transition-all hover:scale-110 flex items-center gap-1.5 text-xs font-semibold px-3"
           >
-            <Camera className="w-3.5 h-3.5 text-[#0F766E]" />
+            <Camera className="w-3.5 h-3.5 text-[#008080]" />
             <span>Upload Image</span>
           </button>
           
